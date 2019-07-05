@@ -1,13 +1,46 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../components/home/Home'
-import Catgory from '../components/catgory/Catgory'
-import Find from '../components/find/Find'
-import Cart from '../components/cart/Cart'
-import Mine from '../components/mine/Mine'
-import Detail from '../components/detail/Detail'
-import Search from '../components/search/Search'
-import Login from '../components/mine/Login'
+
+const Home = (resolve) => {
+  import('../components/home/Home').then((module) => {
+    resolve(module)
+  })
+}
+const Catgory = (resolve) => {
+    import('../components/catgory/Catgory').then((module) => {
+        resolve(module)
+    })
+}
+const Find = (resolve) => {
+    import('../components/find/Find').then((module) => {
+        resolve(module)
+    })
+}
+const Cart = (resolve) => {
+    import('../components/cart/Cart').then((module) => {
+        resolve(module)
+    })
+}
+const Mine = (resolve) => {
+    import('../components/mine/Mine').then((module) => {
+        resolve(module)
+    })
+}
+const Detail = (resolve) => {
+    import('../components/detail/Detail').then((module) => {
+        resolve(module)
+    })
+}
+const Search = (resolve) => {
+    import('../components/search/Search').then((module) => {
+        resolve(module)
+    })
+}
+const Login = (resolve) => {
+    import('../components/mine/Login').then((module) => {
+        resolve(module)
+    })
+}
 
 Vue.use(Router)
 
